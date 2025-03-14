@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="p:domain_verify" content="2fb6a7442e89b460c89fe54f6baad6d7"/>
+    <!-- Importando fontes do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Kikfun Shop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #FFFAB3; /* Cor de fundo */
+            color: #000000; /* Preto para texto */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Centralizando verticalmente */
+            min-height: 100vh;
+            padding: 80px 0 40px; /* Espaço invisível no topo */
+            text-align: center;
+        }
+        .header {
+            margin-bottom: 40px; /* Espaçamento abaixo do header */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centralizando horizontalmente */
+            width: 100%;
+        }
+        .header h1 {
+            font-family: 'Dancing Script', cursive; /* Fonte cursiva para o título */
+            font-size: 2.8em; /* Aumentando o tamanho do título */
+            color: #000000;
+            text-transform: none; /* Remove uppercase para imitar a imagem */
+            margin-bottom: 10px; /* Espaçamento abaixo do título */
+        }
+        .header p {
+            font-family: 'Poppins', sans-serif; /* Fonte moderna para a descrição */
+            font-weight: 300; /* Peso leve */
+            font-size: 1.1em; /* Aumentando o tamanho da descrição */
+            color: #333;
+            max-width: 350px; /* Aumentando a largura máxima para acompanhar o tamanho */
+            margin: 0 auto 40px; /* Centralizando e mantendo espaçamento abaixo */
+        }
+        .links {
+            width: 100%;
+            max-width: 380px; /* Largura dos botões */
+        }
+        .link-item {
+            background-color: #FFFFFF; /* Branco para os botões */
+            margin: 20px 0; /* Espaçamento entre os botões */
+            padding: 15px;
+            border: 3px solid #000000; /* Borda grossa */
+            box-shadow: 5px 5px 0 #000000; /* Sombra pronunciada */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-width 0.2s ease; /* Transição suave para a borda */
+        }
+        .link-item a {
+            text-decoration: none;
+            color: #000000; /* Preto */
+            font-size: 1.1em;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .link-item:hover {
+            transform: translateY(2px); /* Move o botão para baixo, simulando "pressão" */
+            box-shadow: 3px 3px 0 #000000; /* Sombra reduzida no hover */
+            border-width: 2px; /* Reduzindo a borda no hover */
+        }
+        .link-item .icon {
+            font-size: 1.2em;
+        }
+        .footer {
+            margin-top: auto;
+            padding: 10px 20px; /* Padding para destacar */
+            font-size: 0.8em;
+            color: #000000; /* Preto para o texto do rodapé */
+            background-color: #FFD700; /* Amarelo dourado no rodapé */
+            border: 1px solid #000000; /* Contorno preto */
+            border-radius: 5px; /* Suave, mas não circular */
+            width: 200px; /* Largura fixa para destacar */
+        }
+        .footer a {
+            color: #000000; /* Preto */
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsividade */
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 2.4em; /* Ajuste para telas menores */
+            }
+            .header p {
+                font-size: 0.9em;
+            }
+            .link-item {
+                padding: 12px;
+            }
+            .link-item a {
+                font-size: 1em;
+            }
+            .links {
+                max-width: 90%;
+            }
+            .footer {
+                width: 180px; /* Ajuste para telas menores */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Kikfun Shop</h1>
+        <p>✨- Boost your productivity with fully customizable Notion templates!</p>
+    </div>
+    <div class="links">
+        <div class="link-item">
+            <a href="https://kikfun.etsy.com" target="_blank">
+                <span>Shop on Etsy</span>
+                <span class="icon">🛒</span>
+            </a>
+        </div>
+        <div class="link-item">
+            <a href="https://ko-fi.com/kikfunn" target="_blank">
+                <span>Shop on Ko-fi</span>
+                <span class="icon">❤️</span>
+            </a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2025 All rights reserved</p>
+    </div>
+</body>
+</html>
